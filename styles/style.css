@@ -59,10 +59,11 @@ nav li a {
 
 .web-title {
     display: flex;
-    justify-content: space-between;
-    gap: 3%;
+    /* justify-content: space-between; */
+    /* gap: 1%; */
+    justify-content: center;
     color: #131318;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 800;
 }
 
@@ -296,7 +297,8 @@ ul {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 3%;
+    column-gap: 2%;
+    row-gap: 5%;
     padding-bottom: 3%;
 }
 
@@ -341,10 +343,147 @@ ul {
     grid-row: 2/span 1;
 }
 
+/* Newsletter style */
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
 
+.newsletter-form {
+    width: 40%;
+    border-radius: 0.8rem;
+    border: 1px solid #FF5400;
+}
 
+.newsletter-form-content {
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    width: 90%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
 
+.newsletter-form h4 {
+    color: #131318;
+    font-size: 3vw;
+    font-weight: 800;
+    margin-bottom: 2%;
+}
 
+.newsletter-form p {
+    color: #5A5A5D;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.newsletter-form hr {
+    background: rgba(19, 19, 24, 0.10);
+    border-radius: 50%;
+    opacity: 0.5;
+    margin: 5% 0;
+}
+
+.newsletter-form input {
+    width: 100%;
+    border: none;
+    border-radius: 0.5vw;
+    background: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 1.5vw;
+    font-weight: 400;
+    padding: 2.3%;
+}
+
+.newsletter-form button {
+    width: 100%;
+    border-radius: 0.5vw;
+    padding: 2.2%;
+    margin-top: 2%;
+    font-size: 1.5vw;
+}
+
+.newsletter-img {
+    width: 50%;
+    position: relative;
+}
+
+.newsletter-img img {
+    width: 100%;
+}
+
+.save70 {
+    width: 40%;
+    text-align: center;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 3%;
+    transform: rotate(-19.628deg);
+    position: absolute;
+    left: 57%;
+    bottom: 13%;
+}
+
+.save70 p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.save70 h2 {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+/* footer style */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 7%;
+}
+
+.footer-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+
+.footer-description {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 2% 0;
+}
+
+.social-links {
+    margin-top: 4%;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #131318;
+    margin-left: 2%;
+    font-size: 22px;
+}
+
+.footer-bottom hr {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    background: rgba(19, 19, 24, 0.10);
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.footer-bottom p {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+}
 
 /* --- Responsive-Media Query-small device --- */
 @media screen and (max-width: 600px) {
@@ -465,25 +604,67 @@ ul {
         grid-column: 1/span 1;
         grid-row: 7/span 1;
     }
+
     /* Choose us responsive */
-    .choose-content{
+    .choose-content {
         width: 100%;
     }
-    .choose-card-container{
+
+    .choose-card-container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
     }
-    .choose-card-1{
+
+    .choose-card-1 {
         grid-column: 1/span 1;
         grid-row: 1/span 1;
     }
-    .choose-card-2{
+
+    .choose-card-2 {
         grid-column: 1/span 1;
         grid-row: 2/span 1;
     }
-    .choose-card-3{
+
+    .choose-card-3 {
         grid-column: 1/span 1;
         grid-row: 3/span 1;
+    }
+
+    /* newletter responsive */
+    .newsletter {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 80px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+    }
+
+    .newsletter-form h4 {
+        font-size: 32px;
+    }
+
+    .newsletter-form p,
+    .newsletter-form input,
+    .newsletter-form button {
+        font-size: 16px;
+    }
+
+    .newsletter-img {
+        width: 100%;
+    }
+
+    .save70 {
+        padding: 1%;
+    }
+
+    .save70 p {
+        font-size: 13px;
+    }
+
+    .save70 h2 {
+        font-size: 17px;
     }
 }
 
