@@ -404,6 +404,89 @@ ul,
     grid-row: 2/span 1;
 }
 
+/* Deals and discounts style */
+.deals {
+    margin-top: 5%;
+}
+
+.deals-content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.deals-content h1 {
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 1% 0;
+}
+
+.deals-content p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.deals-img {
+    border-radius: 16px;
+    background-image: url('../images/Group\ 39.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 3%;
+    padding: 5% 0;
+}
+
+.deals-details {
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 3% 4%;
+    margin-left: 50%;
+}
+
+.deals-details-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deals-details-icon div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deals-details-description p,
+.deals-details-icon p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.deals-details-description h4 {
+    color: #131318;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 2% 0;
+}
+
+.deals-details-price {
+    color: #FF5400;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 3% 0;
+}
+.deals-img2{
+    background-image: url('../images/Group\ 40.png');
+}
+.deals-details2{
+    margin-left: 10%;
+}
 /* perfect place style */
 .perfect {
     /* border: 1px solid black; */
@@ -677,7 +760,18 @@ footer {
         width: 25%;
         padding: 2%;
     }
-
+    /* deals  and discounts  */
+    .deals{
+        width: 100%;
+        margin-top: 20%;
+    }
+    .deals-content{
+        width: 100%;
+    }
+    .deals-details{
+        width: 90%;
+        margin-left: 5%;
+    }
     /* trending now responsive */
     .trending-card-container {
         flex-direction: column;
@@ -782,7 +876,8 @@ footer {
         height: 100%;
         margin-top: 10%;
     }
-    .perfect-video p{
+
+    .perfect-video p {
         font-size: 4vw;
     }
 
@@ -846,7 +941,14 @@ footer {
     .trending {
         margin-bottom: 20%;
     }
-
+    /* deals  and discounts  */
+    .deals{
+        width: 100%;
+    }
+    .deals-details{
+        width: 90%;
+        margin-left: 5%;
+    }
     /* perfect place */
     .perfect {
         flex-direction: column;
