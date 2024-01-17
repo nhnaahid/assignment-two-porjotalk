@@ -56,9 +56,11 @@ nav li a {
 .home {
     color: #FF5400;
 }
-.hamburger{
+
+.hamburger {
     display: none;
 }
+
 .web-title {
     display: flex;
     /* justify-content: space-between; */
@@ -68,6 +70,7 @@ nav li a {
     font-size: 24px;
     font-weight: 800;
 }
+
 .web-title span {
     color: #FF5400;
 }
@@ -143,14 +146,16 @@ input {
     width: 50%;
 }
 
-.popular-content h2 {
+.popular-content h2,
+.perfect-content h2 {
     color: #131318;
     font-size: 32px;
     font-weight: 800;
 }
 
 .popular-content p,
-ul {
+ul,
+.perfect-content p {
     color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
     font-weight: 400;
@@ -185,9 +190,11 @@ ul {
     font-weight: 800;
     margin-bottom: 0.5%;
 }
-.trending-content{
+
+.trending-content {
     padding: 0 2%;
 }
+
 .trending-content p {
     color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
@@ -208,6 +215,7 @@ ul {
     object-fit: cover;
     border-radius: 8px;
 }
+
 .trending-card-container img:hover {
     box-shadow: 5px 5px 5px 5px rgb(131, 123, 123);
 }
@@ -218,12 +226,14 @@ ul {
     width: 30%;
     margin: 3% 0;
 }
-.trending-card-container p{
+
+.trending-card-container p {
     color: #131318;
     font-size: 20px;
     font-weight: 600;
     margin: 2% 0;
 }
+
 /* Destination style */
 .destination {
     /* border: 1px solid #131318; */
@@ -394,6 +404,43 @@ ul {
     grid-row: 2/span 1;
 }
 
+/* perfect place style */
+.perfect {
+    /* border: 1px solid black; */
+    margin: 7% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perfect-content {
+    width: 45%;
+}
+
+.perfect-content ul {
+    color: #131318;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-left: 20px;
+}
+.perfect-content button{
+    margin-top: 15px;
+}
+
+.perfect-video {
+    width: 50%;
+    height: 350px;
+    /* border: 1px solid black; */
+}
+
+.perfect-video video {
+    border-radius: 14px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Newsletter style */
 .newsletter {
     display: flex;
@@ -544,6 +591,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     nav ul li {
         display: none;
     }
@@ -615,20 +663,27 @@ footer {
         width: 25%;
         padding: 2%;
     }
+
     /* trending now responsive */
-    .trending-card-container{
+    .trending-card-container {
         flex-direction: column;
     }
-    .trending-content{
+
+    .trending-content {
         text-align: center;
     }
-    .trending-card-1, .trending-card-2, .trending-card-3{
+
+    .trending-card-1,
+    .trending-card-2,
+    .trending-card-3 {
         width: 100%;
     }
-    .trending-card-container button{
+
+    .trending-card-container button, .perfect button {
         width: 30%;
         padding: 2%;
     }
+
     /* Choose destination */
     .destination-img {
         grid-template-columns: 1fr;
@@ -700,7 +755,15 @@ footer {
         grid-column: 1/span 1;
         grid-row: 3/span 1;
     }
-
+    /* perfect place responsive */
+    .perfect{
+        flex-direction: column;
+    }
+    .perfect-content, .perfect-video{
+        width: 100%;
+        height: 100%;
+        margin-top: 10%;
+    }
     /* newletter responsive */
     .newsletter {
         flex-direction: column;
@@ -756,8 +819,54 @@ footer {
         padding: 1%;
         margin-bottom: 3%;
     }
+
     /* trending now */
-    .trending{
+    .trending {
         margin-bottom: 20%;
+    }
+    /* perfect place */
+    .perfect{
+        flex-direction: column;
+    }
+    .perfect-content, .perfect-video{
+        width: 100%;
+        height: 100%;
+        margin-top: 10%;
+    }
+    /* newletter responsive */
+    .newsletter {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 80px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+    }
+
+    .newsletter-form h4 {
+        font-size: 32px;
+    }
+
+    .newsletter-form p,
+    .newsletter-form input,
+    .newsletter-form button {
+        font-size: 16px;
+    }
+
+    .newsletter-img {
+        width: 100%;
+    }
+
+    .save70 {
+        padding: 1%;
+    }
+
+    .save70 p {
+        font-size: 13px;
+    }
+
+    .save70 h2 {
+        font-size: 17px;
     }
 }
