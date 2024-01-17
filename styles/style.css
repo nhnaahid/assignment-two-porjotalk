@@ -57,7 +57,7 @@ nav li a {
     color: #FF5400;
 }
 
-.hamburger {
+#hamburger {
     display: none;
 }
 
@@ -610,7 +610,7 @@ footer {
         display: none;
     }
 
-    .hamburger {
+    #hamburger {
         display: block;
         margin-left: 80%;
         font-size: 30px;
