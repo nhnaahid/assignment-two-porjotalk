@@ -56,7 +56,9 @@ nav li a {
 .home {
     color: #FF5400;
 }
-
+.hamburger{
+    display: none;
+}
 .web-title {
     display: flex;
     /* justify-content: space-between; */
@@ -66,7 +68,6 @@ nav li a {
     font-size: 24px;
     font-weight: 800;
 }
-
 .web-title span {
     color: #FF5400;
 }
@@ -175,7 +176,7 @@ ul {
 
 /* trending now style */
 .trending {
-    margin: 8% 0;
+    margin: 7% 0 12% 0;
 }
 
 .trending-content h2 {
@@ -539,11 +540,18 @@ footer {
 @media screen and (max-width: 600px) {
 
     /* shared responsive style */
-    nav,
-    nav ul,
     .popular {
         flex-direction: column;
         align-items: center;
+    }
+    nav ul li {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: 80%;
+        font-size: 30px;
     }
 
     .popular-content,
@@ -605,7 +613,7 @@ footer {
     /* popular tour responsive */
     .popular button {
         width: 25%;
-        padding: 1%;
+        padding: 2%;
     }
     /* trending now responsive */
     .trending-card-container{
@@ -750,6 +758,6 @@ footer {
     }
     /* trending now */
     .trending{
-        margin-bottom: 15%;
+        margin-bottom: 20%;
     }
 }
